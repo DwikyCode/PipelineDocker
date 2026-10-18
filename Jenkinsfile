@@ -3,8 +3,6 @@ pipeline {
     environment {
         IMAGE_NAME = 'dwikyrahman/simple-app'
         REGISTRY_CREDENTIALS = 'dockerhub-credentials'
-        
-        DOCKER_HOST = 'tcp://127.0.0.1:2375' 
     }
     stages {
         stage('Checkout') {
