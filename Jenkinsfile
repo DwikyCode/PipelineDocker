@@ -3,9 +3,6 @@ pipeline {
     environment {
         IMAGE_NAME = 'dwikyrahman/simple-app'
         REGISTRY_CREDENTIALS = 'dockerhub-credentials'
-        
-        DOCKER_HOST = 'tcp://localhost:2375'
-        PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
     }
     stages {
         stage('Checkout') {
