@@ -1,11 +1,9 @@
 pipeline {
     agent any
     environment {
-        // Pastikan username ini sudah benar milikmu
         IMAGE_NAME = 'dwikyrahman/simple-app'
         REGISTRY_CREDENTIALS = 'dockerhub-credentials'
         
-        // Dua baris sakti untuk bypass error di Windows:
         DOCKER_HOST = 'tcp://localhost:2375'
         PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
     }
